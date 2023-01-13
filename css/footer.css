@@ -1,0 +1,178 @@
+
+.footer    {
+  min-height: 335px;
+  background-color: #151515;
+}
+
+.footer__container    {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+
+.footer__logo   {
+}
+
+.logo   {
+  width: 200px;
+}
+
+.footer__info   {
+}
+
+.info   {
+  flex: 1 1 auto;
+}
+
+.info__name   {
+  margin-bottom: 15px;
+}
+
+.info__title   {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.info__subtitle   {
+  color: #696969;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.info__links   {
+  margin-bottom: 40px;
+}
+
+.links   {
+}
+
+.links__title   {
+  color: #696969;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.links__list   {
+  display: flex;
+  gap: 15px;
+}
+
+.links__link   {
+}
+
+.link   {
+}
+
+.link__img  {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+}
+
+.link__img:hover  {
+  width: 28px;
+  height: 28px;
+}
+
+.link__img:active  {
+  width: 22px;
+  height: 22px;
+}
+
+.info__creator   {
+}
+
+.creator   {
+}
+
+.creator__from   {
+  color: #696969;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.creator__name   {
+  display: flex;
+  align-items: flex-end;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+
+.footer__copyright   {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.copyright   {
+  color: #404040;
+  font-size: 15px;
+  text-align: right;
+  line-height: 18px;
+}
+
+.debug   {
+  cursor: pointer;
+  color: #404040;
+  font-size: 15px;
+  text-align: right;
+  line-height: 18px;
+  transition: 0.3s;
+}
+
+.debug:hover   {
+  font-size: 17px;
+}
+
+@media (max-width: 500px) {
+
+  .footer__container   {
+    justify-content: center;
+  }
+
+  .info   {
+    flex: 1 1 auto;
+  }
+
+  .info__title   {
+    text-align: center;
+  }
+
+  .info__subtitle   {
+    text-align: center;
+  }
+
+  .info__links   {
+    text-align: center;
+  }
+
+  .links__list  {
+    justify-content: center;
+  }
+
+  .creator__from   {
+    text-align: center;
+  }
+
+  .creator__name   {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 880px) {
+  .footer__copyright   {
+    flex: 1 1 100%;
+    align-items: center;
+    margin-top: 15px;
+  }
+}
+
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<title>Password-Generator</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					Password-Generator
+				</div>
+			</div>
+		</header>
+		<main class="generator">
+			<div class="generator__container">
+				<h1 class="generator__title">Create your password</h1>
+				<div class="generator__body">
+					<div class="generator__settings settings">
+						<div class="settings__body">
+							<div class="settings__keyword keyword">
+								<h3 class="keyword__title title">Keyword:</h3>
+								<input type="text" pattern="[A-Za-z]" class="keyword__input" id="Keyword" name="Keyword"
+									placeholder="Enter keyword">
+							</div>
+							<div class="settings__simbols simbols">
+								<h3 class="simbols__title title">Simbols:</h3>
+								<div class="simbols__body">
+									<div class="simbols__checkbox">
+										<input type="checkbox" checked class="checkbox" id="uppercase-checkbox"
+											value="ABC" name="ABC" />
+										<label for="uppercase-checkbox"></label>
+										<h4 class="simbols__checkbox-text text">ABC</h4>
+									</div>
+									<div class="simbols__checkbox">
+										<input type="checkbox" class="checkbox" id="lowercase-checkbox" value="abc"
+											name="abc" />
+										<label for="lowercase-checkbox"></label>
+										<h4 class="simbols__checkbox-text text">abc</h4>
+									</div>
+
+									<div class="simbols__checkbox">
+										<input type="checkbox" checked class="checkbox" id="numerals-checkbox"
+											value="123" name="123" />
+										<label for="numerals-checkbox"></label>
+										<h4 class="simbols__checkbox-text text">123</h4>
+									</div>
+
+									<div class="simbols__checkbox">
+										<input type="checkbox" class="checkbox" id="signs-checkbox" value="#$&"
+											name="#$&" />
+										<label for="signs-checkbox"></label>
+										<h4 class="simbols__checkbox-text text">#$&</h4>
+									</div>
+								</div>
+							</div>
+							<div class="settings__length length">
+								<h3 class="length__title title">Length:</h3>
+								<div class="length__body">
+									<button type="button" class="length__arrow_l" onclick="passwordLengthReduction()">
+										<img src="./img/arrow_l.svg" alt="Arrow">
+									</button>
+									<div class="length__slider">
+										<output class="range__output" id="len" for="length">1</output>
+										<input type="range" id="length" class="length__range" min="1" max="15" step="1"
+											value="0" oninput="lengthValueUpdate(value)">
+									</div>
+									<button type="button" class="length__arrow_r" onclick="passwordLengthIncreasing()">
+										<img src="./img/arrow_r.svg" alt="Arrow">
+									</button>
+								</div>
+							</div>
+							<button class="settings__submit">Generate</button>
+
+						</div>
+
+					</div>
+					<div class="generator__img">
+						<img class="img" src="./img/01.svg" alt="Weak Password">
+					</div>
+				</div>
+				<div class="generator__result result">
+					<div class="result__title">Your password</div>
+					<div class="result__password">Fem8XE#xAj</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo">
+					<img src="./img/logo.svg" alt="Логотип" class="logo">
+				</div>
+				<div class="footer__info info">
+					<div class="info__name">
+						<div class="info__title">< Password-Generator /></div>
+						<div class="info__subtitle">Project: 01</div>              
+					</div>
+					<div class="info__links links">
+						<div class="links__title">Links:</div>
+						<ul class="links__list">
+							<a class="links__link link">
+								<img src="./img/github.svg" alt="github" class="link__img">
+							</a>
+							<a class="links__link link">
+								<img src="./img/mail.svg" alt="mail" class="link__img">
+							</a>
+							<a class="links__link link">
+								<img src="./img/instagram.svg" alt="instagram" class="link__img">
+							</a>
+							<a class="links__link link">
+								<img src="./img/telegram.svg" alt="telegram" class="link__img">
+							</a>
+						</ul>
+					</div>
+					<div class="info__creator creator">
+						<div class="creator__from">From</div>
+						<div class="creator__name">Imagine Unlimited</div>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<div class="copyright">© Copyright 2022</div>
+					<a class="debug">Сообщить об ошибке</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
